@@ -1,0 +1,27 @@
+# ─── Credenciales y secretos — NUNCA subir ───────────────────────────────────
+*.pkrvars.hcl
+*.pkrvars.json
+.env
+.env.*
+secrets/
+credentials/
+
+# ─── Archivos generados por Packer ───────────────────────────────────────────
+packer_cache/
+*.lock.hcl
+crash.log
+
+# ─── Claves SSH generadas ────────────────────────────────────────────────────
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# ─── Sistema operativo ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Editores ────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
