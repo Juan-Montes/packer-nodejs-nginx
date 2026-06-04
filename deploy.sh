@@ -31,7 +31,7 @@ echo " Template : $TEMPLATE"
 echo " Variables: $VAR_FILE"
 echo ""
 
-packer build -var-file="$VAR_FILE" "$TEMPLATE"
+packer build -force -var-file="$VAR_FILE" "$TEMPLATE"
 
 echo ""
 echo "✅ Imagen '$IMAGE_NAME' generada exitosamente en Azure."
