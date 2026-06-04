@@ -91,6 +91,7 @@ source "azure-arm" "nodejs_nginx" {
   private_virtual_network_with_public_ip = false
 
   # Comunicador SSH (Packer se conecta así a la VM temporal)
+  os_type        = "Linux"
   communicator   = "ssh"
   ssh_username   = "packer"
   ssh_timeout    = "20m"
