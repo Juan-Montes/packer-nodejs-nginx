@@ -161,6 +161,8 @@ build {
     inline = [
       "echo '>>> [4/6] Instalando la aplicacion Node.js...'",
       "sudo mkdir -p /opt/myapp",
+      "sudo mkdir -p /var/log/pm2",
+      "sudo chown -R packer:packer /var/log/pm2",
       "sudo cp /tmp/hello.js /opt/myapp/hello.js",
       "sudo cp /tmp/ecosystem.config.js /opt/myapp/ecosystem.config.js",
       "sudo chown -R packer:packer /opt/myapp",
