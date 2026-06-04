@@ -48,7 +48,7 @@ variable "resource_group" {
 variable "location" {
   type        = string
   description = "Región de Azure"
-  default     = "East US"
+  default     = "West US"
 }
 
 variable "image_name" {
@@ -77,7 +77,7 @@ source "azure-arm" "nodejs_nginx" {
   image_version   = "latest"
 
   # Tamaño de la VM temporal de build
-  vm_size = "Standard_B2s"
+  vm_size = "Standard_D2s_v3"
 
   # Destino de la imagen resultante
   managed_image_name                = var.image_name
