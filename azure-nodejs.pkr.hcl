@@ -148,12 +148,12 @@ build {
 
   # --- Paso 4: Copiar la aplicación Node.js de ejemplo ---
   provisioner "file" {
-    source      = "../app/hello.js"
+    source      = "app/hello.js"
     destination = "/tmp/hello.js"
   }
 
   provisioner "file" {
-    source      = "../app/ecosystem.config.js"
+    source      = "app/ecosystem.config.js"
     destination = "/tmp/ecosystem.config.js"
   }
 
