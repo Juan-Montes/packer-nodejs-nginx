@@ -1,7 +1,7 @@
 # =============================================================================
 # Ejercicio 1 - Template Packer para Azure
 # Imagen: Ubuntu 22.04 LTS + Node.js 20 LTS + PM2 + Nginx (reverse proxy)
-# Materia: Herramientas DevOps - UNIR
+# Materia: Herramientas DevOps - UNIR 2025
 # =============================================================================
 
 packer {
