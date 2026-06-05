@@ -118,9 +118,11 @@ build {
   provisioner "shell" {
     inline = [
       "echo '>>> [1/6] Actualizando el sistema operativo...'",
+      "sudo apt-get clean",
+      "sudo rm -rf /var/lib/apt/lists/*",
       "sudo apt-get update -y || true",
-      "sudo apt-get upgrade -y",
-      "sudo apt-get install -y curl wget git build-essential"
+      "sudo apt-get upgrade -y || true",
+      "sudo apt-get update -y && sudo apt-get install -y curl wget git build-essential"
     ]
   }
 
@@ -168,7 +170,9 @@ build {
       "sudo chown -R packer:packer /opt/myapp",
       # Iniciar la app con PM2 y guardar el estado
       "cd /opt/myapp && pm2 start ecosystem.config.js",
-      "pm2 save"
+      "pm2 save",
+      "sudo env PATH=$PATH:/usr/bin pm2 startup systemd -u azureuser --hp /home/azureuser || true",
+      "sudo loginctl enable-linger azureuser || true"
     ]
   }
 

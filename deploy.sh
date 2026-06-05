@@ -59,6 +59,7 @@ az vm create \
   --admin-username "$ADMIN_USER" \
   --generate-ssh-keys \
   --public-ip-sku Standard \
+  --size Standard_D2s_v3 \
   --location "$LOCATION" \
   --output table
 
