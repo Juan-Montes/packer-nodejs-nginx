@@ -3,7 +3,7 @@
 # deploy.sh — Ejercicio 2: Despliegue totalmente automático
 # Encadena: packer build → az vm create → verificación con curl
 # Sin intervención manual en ningún paso
-# Materia: Herramientas DevOps - UNIR
+# Materia: Herramientas DevOps - UNIR 2025
 # =============================================================================
 
 set -euo pipefail
