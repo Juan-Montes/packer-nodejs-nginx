@@ -16,17 +16,8 @@ de máquina virtual inmutables en entornos multinube.
 - Cuenta Azure con suscripción activa
 
 ## Estructura
-packer-labs/
-├── README.md
-├── .gitignore
-└── lab1-nodejs-nginx/
-├── azure-nodejs.pkr.hcl        # Template Packer HCL2
-├── azure.pkrvars.hcl.example   # Variables de ejemplo (sin credenciales)
-├── deploy.sh                   # Despliegue automatizado
-├── setup-azure.sh              # Script de prerrequisitos
-└── app/
-├── hello.js                # Aplicación Node.js
-└── ecosystem.config.js     # Configuración PM2
+<img width="739" height="229" alt="imagen" src="https://github.com/user-attachments/assets/2c60eb34-3ce0-49c8-9734-a35dfc2f4f88" />
+
 
 ## Materia
 Herramientas de DevOps — UNIR — Maestría en Desarrollo y Operaciones de Software
