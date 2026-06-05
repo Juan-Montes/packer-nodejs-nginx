@@ -16,7 +16,8 @@ de máquina virtual inmutables en entornos multinube.
 - Cuenta Azure con suscripción activa
 
 ## Estructura
-<img width="739" height="229" alt="imagen" src="https://github.com/user-attachments/assets/2c60eb34-3ce0-49c8-9734-a35dfc2f4f88" />
+<img width="734" height="239" alt="imagen" src="https://github.com/user-attachments/assets/adc4e5f0-49f5-4b86-b069-cb9902164ae0" />
+
 
 
 ## Materia
